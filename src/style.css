@@ -1,0 +1,71 @@
+#box {
+  background: linear-gradient(
+    179.4deg,
+    rgb(253, 240, 233) 2.2%,
+    rgb(255, 194, 203) 96.2%
+  );
+  border: 2px solid purple;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px 250px;
+  box-shadow: 5px 5px 5px rgba(110, 108, 108, 0.3);
+}
+body {
+  font-family: "Marcellus", serif;
+}
+header.cityname {
+  font-size: 60px;
+  margin-top: 40px;
+}
+
+.citytemperature {
+  position: relative;
+  right: -430px;
+  top: -100px;
+  font-size: 60px;
+}
+#celsius {
+  position: relative;
+  right: -430px;
+  top: -112px;
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+}
+#celsius:hover {
+  color: brown;
+  text-decoration: underline;
+}
+#fahrenheit:hover {
+  color: brown;
+  text-decoration: underline;
+}
+#fahrenheit {
+  position: relative;
+  right: -440px;
+  top: -112px;
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+}
+.sun-icon {
+  color: orange;
+}
+.cloudsun-icon {
+  color: rgb(236, 53, 120);
+}
+.rain-icon {
+  color: rgb(15, 108, 202);
+}
+.thunder-icon {
+  color: rgb(28, 40, 81);
+}
+.cloud-icon {
+  color: rgb(255, 255, 255);
+}
+section {
+  text-align: center;
+}
+.daily {
+  font-size: 30px;
+}
