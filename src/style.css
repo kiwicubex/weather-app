@@ -48,6 +48,10 @@ header.cityname {
   text-decoration: none;
   color: black;
 }
+ul {
+  list-style: none;
+}
+
 .sun-icon {
   color: orange;
 }
