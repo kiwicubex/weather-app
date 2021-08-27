@@ -50,6 +50,11 @@ header.cityname {
 }
 ul {
   list-style: none;
+  position: relative;
+  top: -50px;
+  left: -20px;
+  font-size: 20px;
+  color: grey;
 }
 
 .sun-icon {
