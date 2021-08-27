@@ -7,7 +7,7 @@
   border: 2px solid purple;
   border-radius: 10px;
   padding: 20px;
-  margin: 50px 250px;
+  margin: 50px 250px 10px;
   box-shadow: 5px 5px 5px rgba(110, 108, 108, 0.3);
 }
 body {
@@ -68,4 +68,7 @@ section {
 }
 .daily {
   font-size: 30px;
+}
+.credit {
+  margin-left: 250px;
 }
