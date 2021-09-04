@@ -82,3 +82,10 @@ section {
   margin-left: 250px;
   color: palevioletred;
 }
+.citytemperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.citytemperature .active:hover {
+  text-decoration: none;
+}
