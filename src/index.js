@@ -21,7 +21,7 @@ if (minutes < 10) {
 currentDate.innerHTML = `${day} ${hours}:${minutes}`;
 
 function displayWeatherCondition(response) {
-  console.log(response.data.name);
+  celsiusTemperature = response.data.main.temp;
   let iconElement = document.querySelector("#icon");
 
   document.querySelector("#country").innerHTML = response.data.name;
@@ -37,7 +37,6 @@ function displayWeatherCondition(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  celsiusTemperature = response.data.main.temp;
 }
 function search(event) {
   event.preventDefault();
@@ -100,3 +99,5 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let currentButton = document.querySelector("#current");
 currentButton.addEventListener("click", getCurrentPosition);
+
+search("Singapore");

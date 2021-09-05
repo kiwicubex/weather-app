@@ -7,7 +7,8 @@
   border: 2px solid purple;
   border-radius: 10px;
   padding: 20px;
-  margin: 50px 250px 10px;
+  padding-bottom: 5px;
+  margin: 20px 300px 5px;
   box-shadow: 5px 5px 5px rgba(110, 108, 108, 0.3);
 }
 body {
@@ -20,39 +21,57 @@ header.cityname {
 
 .citytemperature {
   position: relative;
-  right: -430px;
-  top: -100px;
+  right: -240px;
+  top: -114px;
   font-size: 60px;
+}
+#country {
+  position: relative;
+  right: -10px;
+}
+#current-date {
+  position: relative;
+  right: -10px;
+}
+#description {
+  position: relative;
+  right: -10px;
 }
 #celsius {
   position: relative;
-  right: -430px;
-  top: -112px;
+  right: -250px;
+  top: -130px;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 30px;
   color: black;
 }
 #celsius:hover {
   color: brown;
-  text-decoration: underline;
+  text-decoration: none;
 }
 #fahrenheit:hover {
   color: brown;
-  text-decoration: underline;
+  text-decoration: none;
 }
 #fahrenheit {
   position: relative;
-  right: -440px;
-  top: -112px;
-  font-size: 40px;
+  right: -250px;
+  top: -130px;
+  font-size: 30px;
   text-decoration: none;
   color: black;
+}
+
+#icon {
+  position: relative;
+  right: -240px;
+  top: -132px;
 }
 ul {
   list-style: none;
   position: relative;
-  top: -70px;
-  left: -10px;
+  top: -150px;
+  right: -350px;
   font-size: 20px;
   color: grey;
 }
@@ -79,13 +98,20 @@ section {
   font-size: 30px;
 }
 .credit {
-  margin-left: 250px;
+  margin-left: 300px;
   color: palevioletred;
 }
-.citytemperature .active {
+#celsius.active {
   color: rgb(33, 33, 33);
   cursor: default;
 }
-.citytemperature .active:hover {
-  text-decoration: none;
+
+#fahrenheit.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+section {
+  position: relative;
+  top: -130px;
 }
