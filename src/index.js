@@ -40,15 +40,16 @@ function displayWeatherCondition(response) {
 }
 function search(event) {
   event.preventDefault();
-  let apiKey = "9f408e8b27ceddf169ecd64d28596d83";
-  let city = document.querySelector("#search-city").value;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(displayWeatherCondition);
-
   let searchInput = document.querySelector("#search-city");
   let country = document.querySelector("#country");
   country.innerHTML = `${searchInput.value}`;
+  citySearch(searchInput.value);
+}
+
+function citySearch(city) {
+  let apiKey = "9f408e8b27ceddf169ecd64d28596d83";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeatherCondition);
 }
 
 let searchCity = document.querySelector("#search-form");
@@ -100,4 +101,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 let currentButton = document.querySelector("#current");
 currentButton.addEventListener("click", getCurrentPosition);
 
-search("Singapore");
+citySearch("Singapore");
