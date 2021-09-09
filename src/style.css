@@ -101,3 +101,6 @@ section {
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
+.weather-forecast {
+  font-size: 16px;
+}
