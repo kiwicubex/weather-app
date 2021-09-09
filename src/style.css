@@ -76,27 +76,10 @@ ul {
   color: grey;
 }
 
-.sun-icon {
-  color: orange;
-}
-.cloudsun-icon {
-  color: rgb(236, 53, 120);
-}
-.rain-icon {
-  color: rgb(15, 108, 202);
-}
-.thunder-icon {
-  color: rgb(28, 40, 81);
-}
-.cloud-icon {
-  color: rgb(255, 255, 255);
-}
 section {
   text-align: center;
 }
-.daily {
-  font-size: 30px;
-}
+
 .credit {
   margin-left: 300px;
   color: palevioletred;
@@ -114,4 +97,7 @@ section {
 section {
   position: relative;
   top: -130px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
